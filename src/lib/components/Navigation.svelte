@@ -16,7 +16,7 @@
 <nav class="flex justify-between w-full mx-auto bg-white">
 
     <div class="max-w-40">
-        <img src="/src/lib/assets/pradoLogo.svg" alt="Prado Logo">
+        <img src="/images/pradoLogo.svg" alt="Prado Logo">
     </div>
 
     <ul class="flex px-4">
