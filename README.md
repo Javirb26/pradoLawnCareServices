@@ -15,7 +15,7 @@ To recreate this project with the same configuration:
 
 ```sh
 # recreate this project
-npx sv create --template demo --no-types --install npm pradoLawnCareServices
+npx sv create --template minimal --no-types --add prettier eslint tailwindcss="plugins:typography,forms" devtools-json sveltekit-adapter="adapter:netlify" --install npm pradoLawnCareServices
 ```
 
 ## Developing
@@ -40,4 +40,3 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-# pradoLawnCareServices
