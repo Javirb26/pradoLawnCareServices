@@ -6,6 +6,30 @@
      } = $props();
 </script>
 
-<footer>
+<footer class="flex justify-between mx-auto max-w-[1200px] text-white mt-auto w-full">
+
+    <div class="max-w-40">
+        <img src="/src/lib/assets/pradoLogo.svg" alt="Prado Logo">
+    </div>
+    <div>
+        pages:
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Pricing</li>
+                <li>Services</li>
+                <li>Contact</li>
+
+            </ul>
+    </div>
+    <div>
+        contact:
+            <ul>
+                <li>phone: 813 422-8454</li>
+                <li>email: pradolawncareservices@gmail.com</li>
+                <li></li>
+            </ul>
+    </div>
+
     
 </footer>
