@@ -15,9 +15,12 @@
                 <form 
                     name="contact" 
                     method="POST" 
-                    netlify 
+                    data-netlify="true"
                     data-netlify-recaptcha="true"
                     class="flex flex-col w-100">
+
+                    <input type="hidden" name="heroQuote" value="contact" />
+
                     <label class="text-white" name="name" for="name" >add name</label>
                     <input type="text" name="name">
                     <label class="text-white" name="email" for="email">email</label>
