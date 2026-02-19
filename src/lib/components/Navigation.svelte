@@ -26,7 +26,7 @@
             <img src="/images/pradoLogo.svg" alt="Prado Logo">
         </div>
 
-        <ul class="flex px-4">
+        <ul class="hidden lg:flex px-4">
             {#each pages as page}
                 {#if page.title == "Services"}
                     <li class="px-4 flex items-center"

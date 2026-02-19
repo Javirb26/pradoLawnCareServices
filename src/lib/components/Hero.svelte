@@ -7,7 +7,7 @@
 
 <header>
     <div class="relative h-180 w-full bg-cover bg-center" style={`background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('${src}');`}>
-        <div class="flex flex-col justify-center items-center pb-10 px-4 lg:pb-0 lg:px-10 lg:flex-row lg:justify-between h-full mx-auto max-w-325 transition-all duration-300 transform ease-in-out">
+        <div class="flex flex-col justify-center items-center pb-10 px-4 lg:pb-0 lg:px-10 lg:flex-row lg:justify-between h-full mx-auto lg:max-w-325 transition-all duration-300 transform ease-in-out">
             <div class="lg:flex lg:flex-col lg:justify-center text-center lg:text-left text-white pb-16 lg:pb-40">
                 <h1 class=" text-white text-4xl lg:text-5xl">Your Lawncare Provider</h1>
                 <h3 class="pl-2 text-lg lg:text-xl">We get the job done and surpass your expecations</h3>
@@ -19,7 +19,7 @@
                     method="post" 
                     data-netlify="true"
                     data-netlify-honeypot="bot-field"
-                    class="flex flex-col w-100">
+                    class="flex flex-col w-75 lg:w-100">
 
                     <input type="hidden" name="form-name" value="contact"/>
                     <input type="hidden" name="bot-field" />
@@ -32,7 +32,7 @@
                     <input type="tel" name="phone">
 
 
-                    <button class="bg-green-600 rounded-md max-w-1/2 px-4 py-2 mt-5 hover:brightness-90 cursor-pointer hover:text-white" type="submit">Get your Free Quote</button>
+                    <button class="bg-green-600 rounded-md max-w-3/4 px-4 py-2 mt-5 hover:brightness-90 cursor-pointer hover:text-white mx-auto lg:mx-0" type="submit">Get your Free Quote</button>
                 </form>
             </div>
         </div>
