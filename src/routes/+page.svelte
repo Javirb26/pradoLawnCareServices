@@ -6,7 +6,7 @@
 </script>
 
 <!-- NAV -->
-<div class="flex flex-col justify-start min-h-screen w-full">
+<div class="flex flex-col justify-start min-h-screen w-full bricolage-grotesque-600">
     <section>
         <Navigation />
     </section>

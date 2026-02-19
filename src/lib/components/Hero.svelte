@@ -8,18 +8,21 @@
 <header>
     <div class="relative h-140 w-full bg-cover bg-center" style={`background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('${src}');`}>
         <div class="flex justify-between max-w-[1200px] items-center h-full mx-auto">
-            <div class="flex flex-col justify-center items-center h-full">
-                <h1 class="bricolage-grotesque-600 text-white text-5xl">Your Lawncare Provider</h1>
+            <div class="flex flex-col justify-center h-full text-left text-white">
+                <h1 class=" text-white text-5xl">Your Lawncare Provider</h1>
+                <h3 class="pl-2 text-xl">We get the job done and surpass your expecations</h3>
+                <p class="pl-2 text-amber-300">Fill out our contact form to get a free quote today!</p>
             </div>
             <div>
                 <form 
                     name="contact" 
-                    method="POST" 
+                    method="post" 
                     data-netlify="true"
                     data-netlify-recaptcha="true"
+                    data-netlify-honeypot="bot-field"
                     class="flex flex-col w-100">
 
-                    <input type="hidden" name="heroQuote" value="contact" />
+                    <input type="hidden" name="bot-field" />
 
                     <label class="text-white" name="name" for="name" >add name</label>
                     <input type="text" name="name">
@@ -27,7 +30,7 @@
                     <input type="email" name="email">
                     <label class="text-white" name="phone" for="phone">phone number</label>
                     <input type="tel" name="phone">
-                    <button type="submit">Get your Free Quote</button>
+                    <button class="" type="submit">Get your Free Quote</button>
                 </form>
             </div>
         </div>
