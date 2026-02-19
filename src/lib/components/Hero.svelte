@@ -25,12 +25,12 @@
                     <input type="hidden" name="contact" value="contact"/>
                     <input type="hidden" name="bot-field" />
 
-                    <label class="text-white" name="name" for="name" >add name</label>
-                    <input type="text" name="name">
-                    <label class="text-white" name="email" for="email">email</label>
-                    <input type="email" name="email">
-                    <label class="text-white" name="phone" for="phone">phone number</label>
-                    <input type="tel" name="phone">
+                    <label class="text-white" for="name" >add name</label>
+                    <input type="text" name="nameInput">
+                    <label class="text-white" for="email">email</label>
+                    <input type="email" name="emailInput">
+                    <label class="text-white" for="phone">phone number</label>
+                    <input type="tel" name="phoneInput">
                     <button class="" type="submit">Get your Free Quote</button>
                 </form>
             </div>
