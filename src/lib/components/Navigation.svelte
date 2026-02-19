@@ -1,16 +1,22 @@
-<!-- <script>
+<script>
     let active = $state(false);
     let { 
         logo,
-        pages = ['Home', 'About', 'Pricing', 'Services', 'Contact'],
-        services = ['Landscaping', 'Tree trimming', 'mulching', 'property clean ups']
+        pages = [
+            {title: 'Home', path:"/"},
+            {title: 'About', path:"/about"},
+            {title: 'Pricing', path:"/pricing"},
+            {title: 'Services', path:"/services"},
+            {title: 'Contact', path:"/contact"},
+            ],
+        services = [
+            {title: 'Landscaping', path:"/services/landscaping"},
+            {title: 'Tree trimming', path:"/services/tree-trimming"},
+            {title: 'mulching', path:"/services/mulching"},
+            {title: 'property clean ups', path:"/services/property-clean-ups"},
+        ]
      } = $props();
 
-     let disappear = () => {
-        if (active = false){
-
-        }
-     }
 </script>
 
 <nav class="flex justify-between w-full mx-auto bg-white">
@@ -21,26 +27,24 @@
 
     <ul class="flex px-4">
         {#each pages as page}
-            {#if page == "Services"}
-                <li class="px-4 flex items-center" >
-                    <a 
-                        href="{page}.svelte"
-                        onmouseenter={() => {
+            {#if page.title == "Services"}
+                <li class="px-4 flex items-center"
+                    onmouseenter={() => {
                             active = true;
                         }}
                         onmouseleave={() => {
                             active = false;
-                        }}
-                    >
-                        {page}
+                        }} >
+                    <a href="{page.path}" >
+                        {page.title}
                     </a>
                     <span>^</span>
 
-                    <div id="dropdown" class={active ? 'flex absolute top-21 transition-all transform duration-300 ease-in-out opacity-100 bg-white' : 'hidden' }>
+                    <div class={active ? 'flex absolute top-20 bg-white z-50' : 'hidden' }>
                         <ul>
                             {#each services as service}
                                 <li class="">
-                                    <a href="{service}.svelte">{service}</a>
+                                    <a href="{service.path}">{service.title}</a>
                                 </li>
                             {/each}
                         </ul>
@@ -49,10 +53,10 @@
                 
             {:else}
                 <li class="px-4 flex items-center">
-                    <a href="{page}.svelte">{page}</a>
+                    <a href="{page.path}">{page.title}</a>
                 </li>
             {/if}
         {/each}
     </ul>
 
-</nav> -->
+</nav>
