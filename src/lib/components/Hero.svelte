@@ -22,6 +22,7 @@
                     data-netlify-honeypot="bot-field"
                     class="flex flex-col w-100">
 
+                    <input type="hidden" name="contact" value="contact"/>
                     <input type="hidden" name="bot-field" />
 
                     <label class="text-white" name="name" for="name" >add name</label>
