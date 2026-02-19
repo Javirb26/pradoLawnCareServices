@@ -7,13 +7,13 @@
 
 <header>
     <div class="relative h-180 w-full bg-cover bg-center" style={`background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('${src}');`}>
-        <div class="flex justify-between h-full mx-auto max-w-325">
-            <div class="flex flex-col justify-center h-full text-left text-white pb-40">
-                <h1 class=" text-white text-5xl">Your Lawncare Provider</h1>
-                <h3 class="pl-2 text-xl">We get the job done and surpass your expecations</h3>
+        <div class="flex flex-col justify-center items-center pb-10 px-4 lg:pb-0 lg:px-10 lg:flex-row lg:justify-between h-full mx-auto max-w-325 transition-all duration-300 transform ease-in-out">
+            <div class="lg:flex lg:flex-col lg:justify-center text-center lg:text-left text-white pb-16 lg:pb-40">
+                <h1 class=" text-white text-4xl lg:text-5xl">Your Lawncare Provider</h1>
+                <h3 class="pl-2 text-lg lg:text-xl">We get the job done and surpass your expecations</h3>
                 <p class="pl-2 text-amber-300">Fill out our contact form to get a free quote today!</p>
             </div>
-            <div class="flex flex-col justify-center">
+            <div class="lg:flex lg:flex-col lg:justify-center">
                 <form 
                     name="contact" 
                     method="post" 
@@ -43,8 +43,6 @@
                 <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill" fill="white"></path>
                 <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill" fill="white"></path>
             </svg>
-            
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="#fff"><path d="M0 1v99c134.3 0 153.7-99 296-99H0Z" opacity=".5"></path><path d="M1000 4v86C833.3 90 833.3 3.6 666.7 3.6S500 90 333.3 90 166.7 4 0 4h1000Z" opacity=".5"></path><path d="M617 1v86C372 119 384 1 196 1h421Z" opacity=".5"></path><path d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"></path></g></svg> -->
         </div>
     </div>
     
@@ -53,12 +51,12 @@
 
 <style>
     .custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
 </style>
