@@ -12,7 +12,7 @@
     </section>
     
     <!-- HERO -->
-    <Hero src="/images/customHero.png" alt="this is a hero"/>
+    <Hero src="/images/bg-temp.jpeg" alt="this is a hero"/>
 
     <!-- Services 3 icons / description -->
     
