@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     let active = $state(false);
     let { 
         logo,
@@ -55,4 +55,4 @@
         {/each}
     </ul>
 
-</nav>
+</nav> -->

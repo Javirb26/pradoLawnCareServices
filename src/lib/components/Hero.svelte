@@ -26,12 +26,12 @@
                     <input type="hidden" name="bot-field" />
 
                     <label class="text-white" for="name" >add name</label>
-                    <input type="text" name="nameInput">
+                    <input type="text" name="name">
                     <label class="text-white" for="email">email</label>
-                    <input type="email" name="emailInput">
+                    <input type="email" name="email">
                     <label class="text-white" for="phone">phone number</label>
-                    <input type="tel" name="phoneInput">
-                    
+                    <input type="tel" name="phone">
+
                     <div data-netlify-recaptcha="true"></div>
 
                     <button class="" type="submit">Get your Free Quote</button>
