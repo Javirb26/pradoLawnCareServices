@@ -19,44 +19,46 @@
 
 </script>
 
-<nav class="flex justify-between w-full mx-auto bg-white">
+<nav class="bg-white">
 
-    <div class="max-w-40">
-        <img src="/images/pradoLogo.svg" alt="Prado Logo">
+    <div class="max-w-325 flex justify-between w-full mx-auto ">
+        <div class="max-w-40">
+            <img src="/images/pradoLogo.svg" alt="Prado Logo">
+        </div>
+
+        <ul class="flex px-4">
+            {#each pages as page}
+                {#if page.title == "Services"}
+                    <li class="px-4 flex items-center"
+                        onmouseenter={() => {
+                                active = true;
+                            }}
+                            onmouseleave={() => {
+                                active = false;
+                            }} >
+                        <a href="{page.path}" >
+                            {page.title}
+                        </a>
+                        <span>^</span>
+
+                        <div class={active ? 'flex absolute top-20 bg-white z-50' : 'hidden' }>
+                            <ul>
+                                {#each services as service}
+                                    <li class="">
+                                        <a href="{service.path}">{service.title}</a>
+                                    </li>
+                                {/each}
+                            </ul>
+                        </div>
+                    </li>
+                    
+                {:else}
+                    <li class="px-4 flex items-center">
+                        <a href="{page.path}">{page.title}</a>
+                    </li>
+                {/if}
+            {/each}
+        </ul>
     </div>
-
-    <ul class="flex px-4">
-        {#each pages as page}
-            {#if page.title == "Services"}
-                <li class="px-4 flex items-center"
-                    onmouseenter={() => {
-                            active = true;
-                        }}
-                        onmouseleave={() => {
-                            active = false;
-                        }} >
-                    <a href="{page.path}" >
-                        {page.title}
-                    </a>
-                    <span>^</span>
-
-                    <div class={active ? 'flex absolute top-20 bg-white z-50' : 'hidden' }>
-                        <ul>
-                            {#each services as service}
-                                <li class="">
-                                    <a href="{service.path}">{service.title}</a>
-                                </li>
-                            {/each}
-                        </ul>
-                    </div>
-                </li>
-                
-            {:else}
-                <li class="px-4 flex items-center">
-                    <a href="{page.path}">{page.title}</a>
-                </li>
-            {/if}
-        {/each}
-    </ul>
 
 </nav>
