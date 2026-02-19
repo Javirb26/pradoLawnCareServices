@@ -7,11 +7,28 @@
 
 <header>
     <div class="relative h-140 w-full bg-cover bg-center" style={`background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('${src}');`}>
-        <div class="flex flex-col justify-center items-center h-full">
-            <h1 class="text-7xl text-red-800">WE DO LAWNS</h1>
-            <p class="text-4xl text-red-800">you heard us right</p>
-            <button class="animate-spin bg-white px-7 rounded-2xl"> we do lawns!!!!!!!!</button>
+        <div class="flex justify-between max-w-[1200px] items-center h-full mx-auto">
+            <div class="flex flex-col justify-center items-center h-full">
+                <h1 class="bricolage-grotesque-600 text-white text-5xl">Your Lawncare Provider</h1>
+            </div>
+            <div>
+                <form 
+                    name="contact" 
+                    method="POST" 
+                    netlify 
+                    data-netlify-recaptcha="true"
+                    class="flex flex-col w-100">
+                    <label class="text-white" name="name" for="name" >add name</label>
+                    <input type="text" name="name">
+                    <label class="text-white" name="email" for="email">email</label>
+                    <input type="email" name="email">
+                    <label class="text-white" name="phone" for="phone">phone number</label>
+                    <input type="tel" name="phone">
+                    <button type="submit">Get your Free Quote</button>
+                </form>
+            </div>
         </div>
+        
         <div class="absolute left-0 top-102 w-full overflow-hidden rotate-180">
             <svg class="block relative" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill" fill="white"></path>
