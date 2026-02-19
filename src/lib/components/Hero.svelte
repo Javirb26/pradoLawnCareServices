@@ -18,7 +18,6 @@
                     name="contact" 
                     method="post" 
                     data-netlify="true"
-                    data-netlify-recaptcha="true"
                     data-netlify-honeypot="bot-field"
                     class="flex flex-col w-100">
 
@@ -32,9 +31,8 @@
                     <label class="text-white" for="phone">phone number</label>
                     <input type="tel" name="phone">
 
-                    <div data-netlify-recaptcha="true"></div>
 
-                    <button class="bg-green-600 rounded-md max-w-1/2 px-4 py-2 mt-5" type="submit">Get your Free Quote</button>
+                    <button class="bg-green-600 rounded-md max-w-1/2 px-4 py-2 mt-5 hover:brightness-90 cursor-pointer hover:text-white" type="submit">Get your Free Quote</button>
                 </form>
             </div>
         </div>
