@@ -9,7 +9,7 @@
 <footer class="flex justify-between mx-auto max-w-[1200px] text-white mt-auto w-full">
 
     <div class="max-w-40">
-        <img src="/images/pradoLogo.svg" alt="Prado Logo">
+        <img src="/images/pradoLogo.svg" alt="Prado Lawncare Logo">
     </div>
     <div>
         pages:
