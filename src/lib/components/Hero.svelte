@@ -22,7 +22,7 @@
                     data-netlify-honeypot="bot-field"
                     class="flex flex-col w-100">
 
-                    <input type="hidden" name="contact" value="contact"/>
+                    <input type="hidden" name="form-name" value="contact"/>
                     <input type="hidden" name="bot-field" />
 
                     <label class="text-white" for="name" >add name</label>
@@ -31,6 +31,9 @@
                     <input type="email" name="emailInput">
                     <label class="text-white" for="phone">phone number</label>
                     <input type="tel" name="phoneInput">
+                    
+                    <div data-netlify-recaptcha="true"></div>
+
                     <button class="" type="submit">Get your Free Quote</button>
                 </form>
             </div>
