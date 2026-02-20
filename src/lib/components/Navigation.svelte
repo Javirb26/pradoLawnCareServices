@@ -21,12 +21,12 @@
 
 <nav class="bg-white">
 
-    <div class="max-w-325 flex justify-between w-full mx-auto ">
+    <div class="max-w-325 flex justify-between w-full mx-auto px-4">
         <div class="max-w-40">
             <img src="/images/pradoLogo.svg" alt="Prado Logo">
         </div>
 
-        <ul class="hidden lg:flex px-4">
+        <ul class="hidden lg:flex">
             {#each pages as page}
                 {#if page.title == "Services"}
                     <li class="px-4 flex items-center"
